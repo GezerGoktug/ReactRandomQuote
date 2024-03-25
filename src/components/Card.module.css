@@ -1,0 +1,49 @@
+.backdrop {
+  background-color: green;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s ease-in-out;
+}
+.card {
+  width: 40%;
+  height: max-content;
+  background-color: gainsboro;
+  padding: 30px;
+  border: 2px solid gray;
+  border-radius: 15px;
+}
+.cardText {
+  font-size: 24px;
+  font-weight: 700;
+  transition: all 0.7s ease-in-out;
+}
+.cardText svg {
+  font-size: 50px;
+  margin-right: 15px;
+}
+.cardText div {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  margin: 10px 0;
+  text-align: right;
+}
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.buttonWrapperLeft {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+  }
+}
